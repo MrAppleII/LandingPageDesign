@@ -19,11 +19,13 @@ const landingPageMobile = () => (
           </LargeText>
         </Margins>
         <VideoPreview src={VideoPlayerPreview} width="auto" height="auto" />
+        <Margins className="my-1">
         <ComingSoonText>
-          Our a mobile version is coming soon. in the meantime view us on your
-          laptop or desktop. Sign up below if you would like to get notifified
-          when our app goes live
+          Our a mobile version is coming soon. In the meantime, view us on your
+          laptop or desktop. Sign up below if you would like to get notified
+          when our app goes live.
         </ComingSoonText>
+        </Margins>
       </Padding>
       <EmailInput placeholder="Email" />
       <GetNotifiedButton>Get Notified</GetNotifiedButton>
@@ -37,8 +39,6 @@ const landingPageMobile = () => (
       </GreyContainer>
       <Margins className="my-2">
         <AboutUsContainer>
-          <SmallText className=" leftMobile">About Us</SmallText>
-
           <Margins className="my-3">
             <HeroImage src={HeroPhoto1} width="auto" height="auto" />
           </Margins>
@@ -63,7 +63,7 @@ const landingPageMobile = () => (
               <LargeText className="grey bigger left">
                 Upload your video or film
               </LargeText>
-              <Margins className="my-1">
+              <Margins className="my-2">
                 <SmallText>
                   We are looking for you, storytellers and professional
                   videographers, dedicated film makers and dreamers. Your
@@ -200,7 +200,7 @@ const AboutUsContainer = styled.div`
   align-items: center;
 `
 const LargeText = styled.div`
-  font-size: 39px;
+  font-size: 2.4em;
   font-weight: 500;
   line-height: 1em;
   text-align: center;
@@ -217,7 +217,7 @@ const LargeText = styled.div`
     color: #777777;
   }
   &.bigger {
-    font-size: 41px;
+    font-size: 2.5em;
   }
 `
 
@@ -228,8 +228,8 @@ const MediumText = styled.div`
   letter-spacing: 0.21px;
 `
 const ComingSoonText = styled.div`
-  font-size: 19px;
-  color: #262626;
+  font-size: 18px;
+  color: #777777;
   letter-spacing: 0.13px;
   text-align: center;
   line-height: 26px;
